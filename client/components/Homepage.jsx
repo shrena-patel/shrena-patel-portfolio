@@ -1,6 +1,9 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 const Homepage = () => {
+    
   return (
     <>
 
@@ -26,8 +29,8 @@ const Homepage = () => {
           <div className="hero">
             <div className="left-hero">
                 <div className="social-links">
-                    <p className="social-icon">Github</p>
-                    <p className="social-icon">LinkedIn</p>
+                    <a href="https://github.com/shrena-patel" target="_blank"><i class="fa fa-github fa-3x social-icon"></i></a>
+                    <a href="https://www.linkedin.com/in/shrenapatel/" target="_blank"><i class="fa fa-linkedin fa-3x social-icon"></i></a>
                 </div>
             </div>
 

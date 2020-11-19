@@ -71,4 +71,10 @@
 
 .social-links {
     display: flex;
+    justify-content: space-evenly;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+    color: #6f7dfc
 }
