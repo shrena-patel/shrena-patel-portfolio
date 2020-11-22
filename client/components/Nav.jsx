@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <>
 
-      <header>
+      <header className="header">
           <div className="nav">
 
                 <div className="left-nav-item">
@@ -14,9 +14,9 @@ const Nav = () => {
 
                 <div className="right-nav-items">
                     <div className="nav-links">
-                        <p className="nav-link">Portfolio.</p>
-                        <p className="nav-link">CV.</p>
-                        <p className="nav-link">Contact.</p>
+                        <p className="nav-link">Portfolio</p>
+                        <p className="nav-link">CV</p>
+                        <p className="nav-link">Contact</p>
                     </div>
                 </div>
         

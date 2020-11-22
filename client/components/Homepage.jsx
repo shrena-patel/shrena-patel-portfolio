@@ -1,5 +1,6 @@
 import React from 'react'
 import Nav from './Nav'
+import Footer from './Footer'
 
 const Homepage = () => {
     
@@ -13,10 +14,7 @@ const Homepage = () => {
       <main>
           <div className="hero">
             <div className="left-hero">
-                <div className="social-links">
-                    <a href="https://github.com/shrena-patel" target="_blank"><i className="fa fa-github fa-3x social-icon"></i></a>
-                    <a href="https://www.linkedin.com/in/shrenapatel/" target="_blank"><i className="fa fa-linkedin fa-3x social-icon"></i></a>
-                </div>
+                
             </div>
 
             <div className="right-hero">
@@ -33,6 +31,7 @@ const Homepage = () => {
         </div>
 
       </main>
+      <Footer />
       
     </>
   )
