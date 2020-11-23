@@ -1,3 +1,7 @@
+A portfolio site to showcase my personal projects and group projects I worked on at EDA.
+
+---
+
 # A starter webpack project for React
 
 This is a starter project that uses webpack to transpile and bundle ES6 React code. To use, consider these steps:
