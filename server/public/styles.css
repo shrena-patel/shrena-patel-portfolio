@@ -37,18 +37,26 @@ nav {
     text-decoration: none;
 }
 
+.nav-link:hover,
+.nav-link:focus {
+    color: #DDAF94;
+}
+
 .contact-box {
     color: #266150;
     background: #FDF8F5;
-    padding: 0.75em 1.5em;
+    padding: 0.5em 1em;
     border: 1px solid #266150;
     text-decoration: none;
+    opacity: 1;
 }
 
 .contact-box:hover,
 .contact-box:focus {
    color: #FDF8F5;
    background-color: #266150;
+   opacity: 1;
+   transition: 0.3s;
 }
 
 @media screen and (max-width: 768px) {
@@ -56,12 +64,13 @@ nav {
     .line {
         width: 25px;
         height: 2px;
-        background: white;
+        background: #4F4846;
         margin: 5px;
     }
 
     nav {
         position: relative;
+        align-items: stretch;
     }
 
     .hamburger {
@@ -72,7 +81,9 @@ nav {
         transform: translate(-5%, -50%);
         z-index: 5;
         color: #4F4846;
+        display: none;
     }
+
     .nav-links {
         position: absolute;
         background: #FDF8F5;
@@ -82,9 +93,11 @@ nav {
         width: 100%;
         flex-direction: column;
         padding: 3em;
-        
-        
         transition: all 1s ease-out;
+    }
+
+    .link + .link {
+        padding-top: 2em;
     }
 
     
@@ -93,16 +106,16 @@ nav {
 /* HERO ================================ */
 
 .hero {
-    height: 50vh;
+    height: 90vh;
     background-color: #DDAF94;
-    border-bottom: 2px solid #266150;
+    border-bottom: 1px solid #4F4846;
 }
 
 .hero-text {
     background-color: #DDAF94;
     color: #FDF8F5;
     width: 60%;
-    height: 50vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     line-height: 2;
@@ -111,7 +124,7 @@ nav {
     font-size: 28px;
     font-weight: 200;
     padding-left: 3em;
-    border-bottom: 2px solid #266150; 
+    border-bottom: 1px solid #4F4846; 
 }
 
 .hero-button {
@@ -133,4 +146,28 @@ nav {
 
 .hero-button.fromLeft:after {
     transform-origin: 0% 50%;
+}
+
+@media screen and (max-width: 768px) {
+
+    
+    .hero-text {
+        font-size: 20px;
+        border: none;
+        width: 100%;
+        padding-top: 4em;
+        border-bottom: 1px solid #4F4846; 
+    }
+
+    .hero {
+        height: 50vh;
+    }
+}
+
+/* ABOUT =================================== */
+
+.about-section {
+    height: 50vh;
+    background: #FDF8F5;
+    color: #4F4846;
 }
