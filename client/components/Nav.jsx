@@ -5,7 +5,22 @@ const Nav = () => {
   return (
     <>
 
-      <header className="header">
+   
+    <nav>
+        <div className="hamburger">
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
+        </div>
+
+        <ul className="nav-links">
+            <li className="nav-link"><a href="#" className="nav-link">Portfolio</a></li>
+            <li className="nav-link"><a href="#" className="nav-link">CV</a></li>
+            <li><a href="#" className="contact-box">Contact</a></li>
+        </ul>
+    </nav>
+
+      {/* <header className="header">
           <div className="nav">
 
                 <div className="left-nav-item">
@@ -21,7 +36,8 @@ const Nav = () => {
                 </div>
         
           </div>
-      </header>
+      </header> */}
+
     </>
       )
       }
