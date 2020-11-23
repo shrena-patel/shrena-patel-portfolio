@@ -3,87 +3,171 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #FFF5F5;
-    color: #3C4FFA;
+    
 }
 
 /* NAVBAR ============================== */
 
-.nav {
-    display: flex;
+nav {
+    /* display: flex;
     justify-content: space-between;
     padding: 2em 4em;
     font-size: 16px;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 300; */
+    height: 10vh;
+    background-color: #FDF8F5;
+    color: #4F4846;
+    text-transform: uppercase;
 }
 
 .nav-links {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    cursor: pointer;
 }
 
-.nav-link + .nav-link {
-    padding-left: 4em;
-}
-
-.logo {
-    font-weight: 700;
-    font-size: 24px;
+.nav-link {
+    color: #4F4846;
     text-decoration: none;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-    color: #6f7dfc;
-    cursor: pointer;
+    color: #DDAF94;
+}
+
+.contact-box {
+    color: #266150;
+    background: #FDF8F5;
+    padding: 0.5em 1em;
+    border: 1px solid #266150;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.contact-box:hover,
+.contact-box:focus {
+   color: #FDF8F5;
+   background-color: #266150;
+   opacity: 1;
+   transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+
+    .line {
+        width: 25px;
+        height: 2px;
+        background: #4F4846;
+        margin: 5px;
+    }
+
+    nav {
+        position: relative;
+        align-items: stretch;
+    }
+
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 5;
+        color: #4F4846;
+        display: none;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: #FDF8F5;
+        color: #4F4846;
+        text-transform: uppercase;
+        height: 25vh;
+        width: 100%;
+        flex-direction: column;
+        padding: 3em;
+        transition: all 1s ease-out;
+    }
+
+    .link + .link {
+        padding-top: 2em;
+    }
+
+    
 }
 
 /* HERO ================================ */
 
-.left-hero {
-    position: absolute;
-    width: 243px;
-    height: 76px;
-    left: 208px;
-    top: 388px;
-    font-size: 18px;
-    line-height: 2;
-}
-
-.right-hero { 
-    position: absolute;
-    width: 485px;
-    height: 181px;
-    left: 576px;
-    top: 259px;
-    font-size: 24px;
-    line-height: 2;
-    border-left: 1px solid blue;
-    padding-left: 1em;
-}
-
 .hero {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 3em;
-    height: 50vh;
+    height: 90vh;
+    background-color: #DDAF94;
+    border-bottom: 1px solid #4F4846;
 }
 
-.portfolio-link {
-    margin-top: 3em;
-    text-transform: uppercase;
+.hero-text {
+    background-color: #DDAF94;
+    color: #FDF8F5;
+    width: 60%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    align-items: stretch;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 200;
+    padding-left: 3em;
+    border-bottom: 1px solid #4F4846; 
+}
+
+.hero-button {
     text-decoration: none;
-    border-bottom: 1px solid #3C4FFA;
+    color: #266150;
+    border-bottom: 1px solid #266150;
+    padding-top: 2em;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
 }
 
-.social-links {
-    display: flex;
-    justify-content: space-evenly;
+.hero-button:after {
+    content: '';
+    border-bottom: 1px solid #266150;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
 }
 
-.social-icon:hover,
-.social-icon:focus {
-    color: #6f7dfc;
-    cursor: pointer;
+.hero-button.fromLeft:after {
+    transform-origin: 0% 50%;
+}
+
+@media screen and (max-width: 768px) {
+
+    
+    .hero-text {
+        font-size: 20px;
+        border: none;
+        width: 100%;
+        padding-top: 4em;
+        border-bottom: 1px solid #4F4846; 
+    }
+
+    .hero {
+        height: 50vh;
+    }
+}
+
+/* ABOUT =================================== */
+
+.about-section {
+    height: 50vh;
+    background: #FDF8F5;
+    color: #4F4846;
 }
