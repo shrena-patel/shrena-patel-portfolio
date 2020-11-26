@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 const Homepage = () => {
@@ -11,7 +12,9 @@ const Homepage = () => {
                     <p>Hello.</p>
                     <p>I'm Shrena.</p>
                     <p>A web developer in Wellington.</p>
-                    <a href="#" class="hero-button">View my work</a>
+                    <Link to="/portfolio">
+                        <a href="#" class="hero-button">View my work</a>
+                    </Link>
                 </div>
 
             </div>
