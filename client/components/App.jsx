@@ -3,6 +3,9 @@ import {HashRouter as Router, Route, Link} from 'react-router-dom'
 import Nav from './Nav'
 import Homepage from './Homepage'
 import About from './About'
+import Portfolio from './Portfolio'
+import CV from './CV'
+import Contact from './Contact'
 
 const App = () => {
     return (
@@ -13,7 +16,7 @@ const App = () => {
               {/* <About /> */}
               <Route path="/portfolio" component={Portfolio} />
               <Route path="/cv" component={CV} />
-              <Route path="/contact" component={contact} />
+              <Route path="/contact" component={Contact} />
 
           </Router>
         </>

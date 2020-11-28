@@ -11,9 +11,9 @@ const Homepage = () => {
                 <div className="hero-text">
                     <p>Hello.</p>
                     <p>I'm Shrena.</p>
-                    <p>A web developer in Wellington.</p>
-                    <Link to="/portfolio">
-                        <a href="#" class="hero-button">View my work</a>
+                    <p>A web developer in based Wellington.</p>
+                    <Link to="/portfolio" className="hero-link">
+                        <p className="hero-button">View my work</p>
                     </Link>
                 </div>
 
