@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Portfolio from './Portfolio'
 
-
 class Homepage extends React.Component {
     
 render () {

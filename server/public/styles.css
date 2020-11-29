@@ -122,7 +122,7 @@ nav {
     line-height: 2;
     align-items: stretch;
     justify-content: center;
-    font-size: 38px;
+    font-size: 34px;
     font-weight: 200;
     padding-left: 3em;
     border-bottom: 1px solid #4F4846; 
@@ -182,4 +182,23 @@ nav {
     height: 50vh;
     background: #FDF8F5;
     color: #4F4846;
+}
+
+/* Footer =================================== */
+
+.social-icon {
+    color: #FDF8F5;
+}
+
+.social-links {
+    height: 30vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+}
+
+.icon + .icon {
+    padding-left: 3em;
 }
