@@ -5,7 +5,14 @@ const Portfolio = () => {
     
   return (
     <>
-        <Nav />
+       <div className="hero">
+                
+                <div className="hero-text">
+                    <p>Portfolio page</p>
+                    
+                </div>
+
+        </div>
 
     </>
       )

@@ -1,5 +1,5 @@
 import React from 'react'
-import {HashRouter as Router, Route, Link} from 'react-router-dom'
+import {HashRouter as Router, Route} from 'react-router-dom'
 import Nav from './Nav'
 import Homepage from './Homepage'
 import About from './About'
@@ -12,11 +12,12 @@ const App = () => {
         <>
           <Router>
               <Nav />
-              <Homepage />
+              
               {/* <About /> */}
-              <Route path="/portfolio" component={Portfolio} />
-              <Route path="/cv" component={CV} />
-              <Route path="/contact" component={Contact} />
+              <Route exact path="/homepage" component={Homepage} />
+              <Route exact path="/portfolio" component={Portfolio} />
+              <Route exact path="/cv" component={CV} />
+              <Route exact path="/contact" component={Contact} />
 
           </Router>
         </>
