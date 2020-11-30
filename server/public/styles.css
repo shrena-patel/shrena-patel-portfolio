@@ -109,7 +109,7 @@ nav {
 .hero {
     height: 90vh;
     background-color: #DDAF94;
-    border-bottom: 1px solid #4F4846;
+   
 }
 
 .hero-text {
@@ -125,7 +125,7 @@ nav {
     font-size: 34px;
     font-weight: 200;
     padding-left: 3em;
-    border-bottom: 1px solid #4F4846; 
+    
 }
 
 .hero-button {
@@ -168,7 +168,7 @@ nav {
         border: none;
         width: 100%;
         padding-top: 4em;
-        border-bottom: 1px solid #4F4846; 
+        /* border-bottom: 1px solid #4F4846;  */
     }
 
     .hero {
@@ -201,4 +201,106 @@ nav {
 
 .icon + .icon {
     padding-left: 3em;
+}
+
+.portfolio-card {
+    width: 31%;
+    position: relative;
+    border: 1px solid #266150;
+    margin: 1em;
+    font-size: 25px;
+    text-align: center;
+}
+
+.portfolio-card:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.portfolio-container {
+    display: flex;
+    height: 90vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .card-button {
+    display: inline-block;
+    text-transform: uppercase;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #266150;
+    color: #DDAF94;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.card-button:hover,
+.card-button:focus {
+    background: #DDAF94;
+    color: #266150;
+    border-bottom: 1px solid #266150;
+    border-top: 1px solid #266150;
+}
+
+.card-button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+.card-button:active {
+    transform: scale(0.99);
+}
+@media screen and (max-width: 768px) {
+
+    
+    .portfolio-container {
+        font-size: 20px;
+        border: none;
+        width: 100%;
+        padding-top: 5em;
+        
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+    }
+
+    .portfolio-card {
+        width: 31%;
+        font-size: 15px;
+    
+    
+    }
+
+    .portfolio-card:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+
+    .hero {
+        height: 90vh;
+    }
+
+
+    
 }
