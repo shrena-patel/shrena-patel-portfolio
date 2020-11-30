@@ -11,7 +11,7 @@ render () {
         <>
             <div className="hero">
                 
-                <div className="hero-text">
+                <div className="hero-text main-text">
                     <p>Hello.</p>
                     <p>I'm Shrena.</p>
                     <p>A web developer in based Wellington.</p>

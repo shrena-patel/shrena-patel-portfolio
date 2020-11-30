@@ -109,23 +109,22 @@ nav {
 .hero {
     height: 90vh;
     background-color: #DDAF94;
-   
+    display: flex;
+    align-items: center;
 }
 
 .hero-text {
     background-color: #DDAF94;
     color: #FDF8F5;
-    width: 65%;
+    width: 70%;
     height: 90vh;
     display: flex;
     flex-direction: column;
     line-height: 2;
     align-items: stretch;
-    justify-content: center;
     font-size: 34px;
     font-weight: 200;
     padding-left: 3em;
-    
 }
 
 .hero-button {
@@ -158,6 +157,10 @@ nav {
     transform-origin: 0% 50%;
 }
 
+.main-text {
+    padding-top: 4em;
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -168,6 +171,7 @@ nav {
         border: none;
         width: 100%;
         padding-top: 4em;
+        height: 100vh;
         /* border-bottom: 1px solid #4F4846;  */
     }
 
@@ -203,6 +207,8 @@ nav {
     padding-left: 3em;
 }
 
+/* PORtFOLIO ====================================== */
+
 .portfolio-card {
     width: 31%;
     position: relative;
@@ -224,6 +230,8 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding: 0;
+    
 }
 
 .content {
@@ -269,6 +277,13 @@ nav {
 .card-button:active {
     transform: scale(0.99);
 }
+
+.card-text {
+    font-size: 18px;
+    border-top: 1px solid #266150;
+    
+}
+
 @media screen and (max-width: 768px) {
 
     
@@ -287,8 +302,6 @@ nav {
     .portfolio-card {
         width: 31%;
         font-size: 15px;
-    
-    
     }
 
     .portfolio-card:after {
@@ -299,6 +312,10 @@ nav {
 
     .hero {
         height: 90vh;
+    }
+
+    .card-text {
+        display: none;
     }
 
 

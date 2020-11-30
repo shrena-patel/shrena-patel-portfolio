@@ -6,7 +6,7 @@ const CV = () => {
     <>
         <div className="hero">
                 
-                <div className="hero-text">
+                <div className="hero-text main-text">
                     <p>CV page</p>
                     
                 </div>

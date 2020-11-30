@@ -6,7 +6,7 @@ const Contact = () => {
     <>
         <div className="hero">
                 
-                <div className="hero-text">
+                <div className="hero-text main-text">
                     <p>Feel free to contact me via the links below.</p>
                     <div className="social-links">
                         <a href="https://github.com/shrena-patel" target="_blank" className="icon"><i className="fa fa-github fa-3x social-icon"></i></a>
