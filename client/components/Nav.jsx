@@ -1,16 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Fade, ScaleFade, Slide, SlideFade } from "@chakra-ui/react"
 
 class Nav extends React.Component {
+
+  
+  
     
   render() {
+    
 
     return (
       <>
     
         <nav>
           
-            <div className="hamburger">
+            <div className="hamburger" id="hamburger-menu">
                 <div className="line"></div>
                 <div className="line"></div>
                 <div className="line"></div>

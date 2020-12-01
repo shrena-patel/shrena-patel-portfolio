@@ -7,13 +7,13 @@ import Portfolio from './Portfolio'
 import CV from './CV'
 import Contact from './Contact'
 
+
 const App = () => {
     return (
         <>
           <Router>
               <Nav />
               
-              {/* <About /> */}
               <Route exact path="/homepage" component={Homepage} />
               <Route exact path="/portfolio" component={Portfolio} />
               <Route exact path="/cv" component={CV} />
