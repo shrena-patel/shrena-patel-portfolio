@@ -1,12 +1,22 @@
-import React from 'react';
-import Nav from './Nav';
+import React from 'react'
 
-const Portfolio = () => {
+import CarouselCards from './CarouselCards'
+
+class Portfolio extends React.Component {
+	
+	render() {
+
+
+	
 	return (
 		<>
-			<div className="hero">
-				<div className="hero-text">
-					<div className="portfolio-container">
+
+		<div className="portfolio-container">
+
+		<CarouselCards />
+		</div>
+			
+					{/* <div className="portfolio-container">
 						<div className="portfolio-card">
 							<div className="content">
 								<p>KererūGo</p>
@@ -38,11 +48,12 @@ const Portfolio = () => {
 
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
+					</div> */}
+			
 		</>
 	);
+}
 };
+
 
 export default Portfolio;
