@@ -2,8 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    
+    font-family: 'Montserrat', sans-serif; 
 }
 
 /* NAVBAR ============================== */
@@ -99,9 +98,7 @@ nav {
 
     .link + .link {
         padding-top: 2em;
-    }
-
-    
+    }    
 }
 
 /* HERO ================================ */
@@ -162,7 +159,6 @@ nav {
 }
 
 
-
 @media screen and (max-width: 768px) {
 
     
@@ -188,7 +184,7 @@ nav {
     color: #4F4846;
 }
 
-/* Contact =================================== */
+/* CONTACT =================================== */
 
 .social-icon {
     color: #FDF8F5;
@@ -207,12 +203,12 @@ nav {
     padding-left: 3em;
 }
 
-/* PORtFOLIO ====================================== */
+/* PORTFOLIO ====================================== */
 
 .portfolio-card {
     width: 31%;
     position: relative;
-    border: 1px solid #266150;
+    border: 1px solid rgb(38,97,80, 0.5);
     margin: 1em;
     font-size: 25px;
     text-align: center;
@@ -233,7 +229,6 @@ nav {
     flex-wrap: wrap;
     padding: 0;
     background-color: #DDAF94;
-    
 }
 
 .content {
@@ -242,7 +237,6 @@ nav {
     height: 100%;
     display: flex;
     flex-direction: column;
-    
   }
 
   .card-button {
@@ -267,13 +261,7 @@ nav {
 .card-button:focus {
     background: #DDAF94;
     color: #266150;
-    border: 1px solid #266150;
-    
-}
-
-.card-button:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
+    border: 1px solid #266150;  
 }
 
 .card-button:active {
@@ -302,8 +290,9 @@ nav {
     }
 
     .portfolio-card {
-        width: 31%;
+        width: 100%;
         font-size: 15px;
+        padding: 8px;
     }
 
     .portfolio-card:after {
@@ -318,21 +307,28 @@ nav {
 
     .card-text {
         display: none;
-    }
-
-
-    
+    }  
 }
 
 
 button.rec-dot{
     background-color: #DDAF94;
     box-shadow: 0 0 1px 3px #266150;
-  }
+}
+
+  button.rec-dot:focus {
+    background-color: #266150;
+    box-shadow: 0 0 1px 3px #266150;
+}
+
+button.rec-dot:hover:enabled {
+    background-color: #266150;
+    box-shadow: 0 0 1px 3px #266150;
+}
   
-  button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
+  /* button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
     box-shadow: 0 0 1px 3px #628b80;
-  }
+  } */
 
   button.rec-arrow-left,
   button.rec-arrow-right {
